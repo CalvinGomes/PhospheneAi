@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phosphene AI</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link href="./../css/dist/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./../css/dist/aos.css" rel="stylesheet">
+    <link href="./../css/general-style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="./../css/contact.css" rel="stylesheet" type="text/css"> -->
+
+    <style>
+        .home {
+            transition: all 0.4s ease-in-out;
+        }
+
+        .notHome {
+            background-color: rgba(1, 1, 19, 0.76) !important;
+            transition: all 0.4s ease-in-out;
+        }
+
+        #contact {
+            /* height: 90vh; */
+        }
+
+        .car {
+            padding-bottom: 40px;
+        }
+
+        .contactTitle {
+            padding-bottom: 20px;
+        }
+
+        .contactPhosphene {
+            margin-top: 40px;
+        }
+
+        #career {
+            margin: 0px;
+        }
+
+        #career .get-in-touch {
+            padding: 0px;
+        }
+
+        #career .career-form .form-field {
+            margin: 32px 0;
+        }
+
+        #career .career-form .input-text {
+            width: 100%;
+            height: 40px;
+            border-width: 0 0 2px 0;
+            border-color: #000;
+            font-size: 18px;
+            color: white;
+            background-color: transparent;
+        }
+
+        #career .career-form .input-text:focus {
+            outline: none !important;
+        }
+
+        #career .career-form .input-text:focus+.label,
+        #career .career-form .input-text.not-empty+.label {
+            -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+        }
+
+        #career .career-form .label {
+            position: absolute;
+            left: 20px;
+            bottom: 11px;
+            font-size: 18px;
+            color: #888;
+            cursor: text;
+            transition: -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
+            transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+        }
+
+
+        /* Mobile Phones */
+        @media only screen and (max-width: 767px) {
+
+            .button {
+                box-shadow: 0 0px 15px 0 rgba(225, 222, 37, 0.637);
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            h4 {
+                font-size: 1rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+
+            #contact {
+                padding-top: 40px;
+            }
+
+            #career {
+                margin-top: 60px;
+                min-height: 90vh;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 20px;
+                background-position: center !important;
+            }
+
+            #career h3 {
+                font-size: 1.3rem;
+                padding-bottom: 20px;
+            }
+
+            #career .title {
+                font-size: 1.8rem;
+            }
+
+            #career .submitButton {
+                height: 45px;
+                width: 100px;
+                font-size: 0.85rem;
+            }
+
+            .mission {
+                margin-top: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+
+
+        }
+
+        /* PCs */
+        @media only screen and (min-width: 768px) {
+
+            .navbar {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .navbar-brand {
+                font-size: 1.8rem;
+            }
+
+            .navbar-nav {
+                margin-left: 40px;
+            }
+
+            .navContactButton {
+                width: 110px;
+                height: 40px;
+                font-size: 0.8rem;
+            }
+
+            .mission {
+                margin-top: 40px;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+
+            #contact {
+                padding-top: 50px;
+            }
+
+            #career {
+                height: 70vh;
+                padding-left: 50px;
+                padding-right: 50px;
+                /* background-position: bottom!important; */
+            }
+
+            #career .title {
+                padding-top: 100px;
+            }
+
+            #career .submitButton {
+                height: 50px;
+                width: 120px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="bgImg">
+
+    <script src="./../script/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand color-yellow" href="./../index.html">Phosphene AI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOptions"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarOptions">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pixel.html">PixelView</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="contact" class="container">
+        <section class="row">
+            <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 vertical-align text-align-center">
+                <h1 class="contactTitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Contact Us
+                </h1>
+                <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="120">Think. Solve. Thrive.</h3>
+            </section>
+        </section>
+    </section>
+
+    <section id="career">
+        <section class="row">
+            <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12 vertical-align">
+                <section class="vertical-align car">
+                    <h3 class="car-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="140">Phone</h3>
+                    <h5 class="car-details" data-aos="fade-up" data-aos-duration="800" data-aos-delay="160">+91 96299
+                        34423</h5>
+                </section>
+                <section class="vertical-align car">
+                    <h2 class="car-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="180">Enquiry</h2>
+                    <h4 class="car-details" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        praveenbenedict@phoenicorn.com</h4>
+                </section>
+            </section>
+            <section class="col-lg-6 col-md-6 col-sm-12 col-xs-12 get-in-touch vertical-align">
+                <h1 class="title text-align-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="220">
+                    Let's empower creative minds together</h1>
+                <form action="https://formspree.io/praveenbenedict@phoenicorn.com" method="POST"
+                    class="row container career-form">
+                    <div class="form-field col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up"
+                        data-aos-duration="800" data-aos-delay="240">
+                        <input id="name" class="input-text checkInput" name="name" type="text" required>
+                        <label class="label" for="name">Name</label>
+                    </div>
+                    <div class="form-field col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-up"
+                        data-aos-duration="800" data-aos-delay="260">
+                        <input id="email" class="input-text checkInput" name="email" type="email" required>
+                        <label class="label" for="email">E-mail</label>
+                    </div>
+                    <div class="form-field col-lg-12 col-md-12 col-sm-12 col-xs-12" data-aos="fade-up"
+                        data-aos-duration="800" data-aos-delay="280">
+                        <input id="message" class="input-text checkInput" name="message" type="text" required>
+                        <label class="label" for="message">Message</label>
+                    </div>
+                    <div class="form-field col-lg-12 col-md-12 col-sm-12 col-xs-12 text-align-center">
+                        <div href="#" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <input class="submit-btn button submitButton" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+
+
+
+    <footer class="vertical-align">
+        Designed with Love and Code by Phoenicorn
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script> -->
+
+    <script src="./../script/dist/jquery.min.js"></script>
+    <script src="./../script/dist/popper.js"></script>
+    <script src="./../script/dist/bootstrap.min.js"></script>
+    <script src="./../script/script.js"></script>
+</body>

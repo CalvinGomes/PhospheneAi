@@ -1,0 +1,94 @@
+.home{
+    transition: all 0.4s ease-in-out;
+}
+
+.notHome{
+    background-color: rgba(1, 1, 19, 0.76)!important;
+    transition: all 0.4s ease-in-out;
+}
+
+#pixel {
+    height: 90vh;
+    padding-bottom: 30px;
+}
+
+.pixelTitle {
+    padding-bottom: 20px;
+}
+
+.pixelPhosphene {
+    margin-top: 40px;
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 767px) {
+
+    .button {
+        box-shadow: 0 0px 15px 0 rgba(225, 222, 37, 0.637);
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    #pixel {
+        padding-top: 40px;
+        height: 90vh;
+    }
+
+    .mission {
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pixelImage {
+        height: 40vh;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* PCs */
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .navbar-nav {
+        margin-left: 40px;
+    }
+
+    .navContactButton {
+        width: 110px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .mission {
+        margin-top: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #pixel {
+        padding-top: 100px;
+    }
+
+    .pixelImage {
+        height: 40vh;
+    }
+
+}

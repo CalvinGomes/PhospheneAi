@@ -1,0 +1,201 @@
+.home{
+    transition: all 0.4s ease-in-out;
+}
+
+.notHome{
+    background-color: rgba(1, 1, 19, 0.76)!important;
+    transition: all 0.4s ease-in-out;
+}
+
+/* MOBILE PHONES */
+@media only screen and (max-width: 767px) {
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .button {
+        box-shadow: 0 0px 15px 0 rgba(225, 222, 37, 0.637);
+    }
+
+    #landingPage,
+    #sec2,
+    #sec3,
+    #sec4,
+    #sec5 {
+        min-height: 100vh;
+        padding-top: 30px;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #landingPage h1,
+    #sec2 h1,
+    #sec3 h1,
+    #sec4 h1,
+    #sec5 h1 {
+        padding-bottom: 10px;
+    }
+
+    #landingPage .pic,
+    #sec2 .pic,
+    #sec3 .pic,
+    #sec4 .pic,
+    #sec5 .pic {
+        padding-top: 40px;
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #landingPage img,
+    #sec2 img,
+    #sec3 img,
+    #sec4 img,
+    #sec5 img {
+        width: 90%;
+    }
+
+    #landingPage .secContent h4,
+    #sec2 .secContent h4,
+    #sec3 .secContent h4,
+    #sec4 .secContent h4,
+    #sec5 .secContent h4{
+        font-size: 1.1rem;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #landingPage .secContent,
+    #sec2 .secContent,
+    #sec3 .secContent,
+    #sec4 .secContent,
+    #sec5 .secContent {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin: 0px;
+    }
+
+    #landingPage .visitSiteButton,
+    #sec2 .visitSiteButton,
+    #sec3 .visitSiteButton,
+    #sec4 .visitSiteButton,
+    #sec5 .visitSiteButton,
+    #chkUsOut .visitSiteButton {
+        height: 45px;
+        width: 100px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+    #sec5 .visitSiteButton {
+        width: 140px;
+    }
+
+    #sec4 .secContent{
+        padding-bottom: 0px!important;
+    }
+
+    #chkUsOut {
+        background-color: rgba(0, 0, 0, 0.404);
+        height: 40vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* PCs */
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .navbar-nav {
+        margin-left: 40px;
+    }
+
+    .navContactButton {
+        width: 110px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    #chkUsOut {
+        background-color: rgba(0, 0, 0, 0.404);
+        height: 40vh;
+    }
+
+ #landingPage,
+ #sec2,
+ #sec3,
+ #sec4,
+ #sec5 {
+        padding-bottom: 20px;
+    }
+
+#sec3{
+    padding-bottom: 60px;
+}
+
+#sec5 {
+    padding-bottom: 80px;
+}
+
+#landingPage h1,
+#sec2 h1,
+#sec3 h1,
+#sec4 h1,
+#sec5 h1{
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+h5 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#landingPage img,
+#sec2 img,
+#sec3 img,
+#sec4 img,
+#sec5 img {
+    width: 100%;
+}
+
+#landingPage .secContent,
+#sec2 .secContent,
+#sec3 .secContent,
+#sec4 .secContent,
+#sec5 .secContent {
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#landingPage .visitSiteButton,
+#sec2 .visitSiteButton,
+#sec3 .visitSiteButton,
+#sec4 .visitSiteButton,
+#sec5 .visitSiteButton,
+#chkUsOut .visitSiteButton {
+    height: 50px;
+    width: 120px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+#sec5 .visitSiteButton {
+    width: 160px;
+}
+}
